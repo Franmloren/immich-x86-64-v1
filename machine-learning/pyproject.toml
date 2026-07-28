@@ -11,7 +11,7 @@ dependencies = [
     "gunicorn>=21.1.0",
     "huggingface-hub>=1.0,<2.0",
     "insightface>=0.7.3,<2.0",
-    "numpy>=2.4.0,<3.0",
+    "numpy>=2.3.5",
     "opencv-python-headless>=4.7.0.72,<5.0",
     "orjson>=3.9.5",
     "pillow>=12.2,<13",
@@ -47,7 +47,7 @@ lint = [
 dev = ["locust>=2.15.1", { include-group = "test" }, { include-group = "lint" }]
 
 [project.optional-dependencies]
-cpu = ["onnxruntime>=1.23.2,<2"]
+cpu = ["onnxruntime>=1.24.1"]
 cuda = ["onnxruntime-gpu>=1.23.2,<2"]
 openvino = ["onnxruntime-openvino>=1.24.1,<2"]
 armnn = ["onnxruntime>=1.23.2,<2"]
